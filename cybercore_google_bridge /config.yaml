@@ -8,16 +8,11 @@ arch:
   - amd64
   - armv7
 init: false
-io:
-  options:
-    FIREBASE_URL: "string"
-    AGENT_SECRET_TOKEN: "string"
-  schema:
-    FIREBASE_URL: "string"
-    AGENT_SECRET_TOKEN: "string"
 options:
   FIREBASE_URL: "https://your-firebase-database.firebaseio.com"
   AGENT_SECRET_TOKEN: "your_firebase_secret_auth_token"
+schema:
+  FIREBASE_URL: str
+  AGENT_SECRET_TOKEN: str
 environment:
   EXPOSED_DOMAINS: "light,fan,switch,input_boolean,sensor,binary_sensor,camera,cover,media_player,climate,lock,vacuum,scene,script,humidifier,water_heater,air_purifier,alarm_control_panel,remote,number,select,valve,lawn_mower"
-
