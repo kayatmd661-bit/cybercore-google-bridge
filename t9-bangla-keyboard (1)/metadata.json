@@ -1,0 +1,6 @@
+{
+  "name": "T9 Bangla Keyboard",
+  "description": "A smart 3x4 T9 keypad for Bengali and English with Gemini AI autocomplete, custom dictionary management, voice input, and smart replies.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

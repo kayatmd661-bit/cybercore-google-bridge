@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<input-method xmlns:android="http://schemas.android.com/apk/res/android"
+    android:isDefault="true">
+    <subtype
+        android:label="Bengali (Bangla T9 AI)"
+        android:imeSubtypeLocale="bn_BD"
+        android:imeSubtypeMode="keyboard" />
+    <subtype
+        android:label="English (T9 AI)"
+        android:imeSubtypeLocale="en_US"
+        android:imeSubtypeMode="keyboard" />
+</input-method>
