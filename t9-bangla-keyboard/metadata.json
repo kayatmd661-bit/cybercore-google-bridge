@@ -1,0 +1,6 @@
+{
+  "name": "T9 Bangla Keyboard",
+  "description": "Smart T9 Bangla keypad application and custom Android Input Method Service with predictive typing, phonetic dictionary, custom themes, and notepad.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
