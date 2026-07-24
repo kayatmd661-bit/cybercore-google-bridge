@@ -19,12 +19,11 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Make gradlew executable
-        run: chmod +x gradlew
-        working-directory: ./t9-bangla-keyboard
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v3
 
-      - name: Build Debug APK with Wrapper
-        run: ./gradlew assembleDebug --no-daemon
+      - name: Build APK with Installed Gradle
+        run: gradle assembleDebug
         working-directory: ./t9-bangla-keyboard
 
       - name: Upload APK Artifact
