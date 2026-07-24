@@ -19,13 +19,19 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Setup Gradle
-        uses: gradle/actions/setup-gradle@v3
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
 
-      - name: Build APK with Installed Gradle
-        run: gradle assembleDebug
-        working-directory: ./t9-bangla-keyboard
+      - name: Generate Missing Gradlew
+        run: |
+          cd t9-bangla-keyboard
+          gradle wrapper --gradle-version 8.2
 
+      - name: Build Debug APK
+        run: |
+          cd t9-bangla-keyboard
+          ./gradlew assembleDebug --no-daemon
+          
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
         with:
